@@ -1,4 +1,4 @@
-﻿namespace KanbanBoard.Domain.Tasks
+﻿namespace KanbanBoard.Domain.Tags
 {
     public class Tag
     {

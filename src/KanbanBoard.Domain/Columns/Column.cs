@@ -1,4 +1,4 @@
-﻿namespace KanbanBoard.Domain.Boards
+﻿namespace KanbanBoard.Domain.Columns
 {
     public class Column
     {
