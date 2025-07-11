@@ -13,5 +13,6 @@
         public List<Guid> TagIds { get; set; } = [];
         public Guid CreatorId { get; set; }
         public Guid AssignedTo { get; set; }
+        public bool IsClosed { get; set; }
     }
 }
