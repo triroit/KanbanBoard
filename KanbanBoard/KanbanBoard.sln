@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\Directory.Build.props = ..\Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard.Contracts", "src\KanbanBoard.Contracts\KanbanBoard.Contracts.csproj", "{C75C9C5B-9122-4C70-BD33-C9166FDCCCB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{092A3B27-73DE-49C3-92E4-A686AB9620AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{092A3B27-73DE-49C3-92E4-A686AB9620AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{092A3B27-73DE-49C3-92E4-A686AB9620AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75C9C5B-9122-4C70-BD33-C9166FDCCCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75C9C5B-9122-4C70-BD33-C9166FDCCCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75C9C5B-9122-4C70-BD33-C9166FDCCCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75C9C5B-9122-4C70-BD33-C9166FDCCCB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{D228A31A-1B76-4AC1-884F-C5A58FB51905} = {612F0BE6-2D00-41C7-96CA-CEDD889F4203}
 		{A17C48F4-241F-444D-9CD7-75F9CAEE3964} = {612F0BE6-2D00-41C7-96CA-CEDD889F4203}
 		{092A3B27-73DE-49C3-92E4-A686AB9620AC} = {612F0BE6-2D00-41C7-96CA-CEDD889F4203}
+		{C75C9C5B-9122-4C70-BD33-C9166FDCCCB1} = {612F0BE6-2D00-41C7-96CA-CEDD889F4203}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {469E7DA3-93EB-4F94-B486-DBD285A590D0}
