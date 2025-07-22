@@ -1,4 +1,5 @@
-﻿using KanbanBoard.Contracts.Boards;
+﻿using KanbanBoard.Application.Boards;
+using KanbanBoard.Contracts.Boards;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KanbanBoard.Presenters
@@ -7,10 +8,18 @@ namespace KanbanBoard.Presenters
     [Route("[controller]")]
     public class BoardsController : ControllerBase
     {
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateBoardDto createBoardDto)
+        private readonly IBoardsService _boardsService;
+
+        public BoardsController(IBoardsService boardsService)
         {
-            return Ok();
+            _boardsService = boardsService;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateBoardDto createBoardDto, CancellationToken cancellationToken)
+        {
+            var boardId = await _boardsService.Create(createBoardDto, cancellationToken);
+            return Ok(boardId);
         }
 
         [HttpPut("{boardId:guid}/column")]
